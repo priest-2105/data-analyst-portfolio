@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  min-width: 100%;
+}
+
+/* Add smooth transitions for the Sheet component */
+.sheet-enter {
+  transform: translateX(100%);
+}
+
+.sheet-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.sheet-exit {
+  transform: translateX(0);
+}
+
+.sheet-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+
