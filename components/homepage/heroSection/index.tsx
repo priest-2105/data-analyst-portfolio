@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import NavbarSection from "@/components/layout/navbar"
-import { ArrowUpFromLine } from "lucide-react"
+import { ArrowUpFromLine, LucideArrowUpRight } from "lucide-react"
 
 export default function HeroSection() {
   const [position, setPosition] = useState({ x: 2.1, y: 29 })
@@ -31,14 +31,14 @@ export default function HeroSection() {
         <div className="absolute inset-0 overflow-hidden">
           <div
             className="absolute transition-transform duration-[2000ms] ease-in-out"
-            style={{
-              background: `url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png)`,
-              opacity: 0.4,
-              inset: "-200%",
-              width: "400%",
-              height: "400%",
-              transform: `translateX(${position.x}%) translateY(${position.y}%) translateZ(0px)`,
-            }}
+            // style={{
+            //   background: `url(https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png)`,
+            //   opacity: 0.4,
+            //   inset: "-200%",
+            //   width: "400%",
+            //   height: "400%",
+            //   transform: `translateX(${position.x}%) translateY(${position.y}%) translateZ(0px)`,
+            // }}
           />
         </div>
 
@@ -46,20 +46,23 @@ export default function HeroSection() {
         <div className="relative z-10">
           <div className="relative inline-block">
             <Image src="/img/avatar.png" alt="Profile" width={150} height={150} className="rounded-full" />
-            <div className="absolute -right-10 top-2 bg-white rounded-full px-3 py-1 shadow-md">
-              <span className="text-sm">Kawsar Ahmed</span>
-              <span className="ml-1 text-xs">✨</span>
-            </div>
+            <div className="absolute -right-10 bg-white rounded-full px-3 py-1 shadow-md -rotate-12 animate-updown">
+            <span className="text-sm">Kawsar Ahmed</span>
+            <span className="ml-1 text-xs">✨</span>
           </div>
 
-          <h1 className="mt-16 max-w-2xl mx-auto text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-gray-900">
-            Building digital <span className="block">products, brands, and</span>
-            <span className="block">experience.</span>
-          </h1>
+          </div>
+
+          <h1 className="mt-4 max-w-2xl mx-auto text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-transparent bg-clip-text bg-custom-gradient">
+          Building digital <span className="block">products, brands, and</span>
+          <span className="block">experience.</span>
+        </h1>
+
+
 
           <Button variant="default" className="mt-12 bg-gray-900 text-white hover:bg-gray-800 rounded-full px-8 py-8">
             Latest Shots
-            <ArrowUpFromLine/>
+            <LucideArrowUpRight/> 
             {/* <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{ height: "100%", width: "100%"}} viewBox="0 0 15 14" preserveAspectRatio="none" width="100%" height="100%"><use href="#svg-741451987_462"></use></svg> */}
           </Button>
         </div>

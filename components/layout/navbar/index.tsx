@@ -31,7 +31,7 @@ export default function NavbarSection() {
   )
 
   return (
-    <nav className="flex items-center justify-between h-38 p-4 md:p-6">
+    <nav className="flex items-center justify-between h-38 py-10 p-4 md:p-6">
       <div className="flex cursor-pointer items-center space-x-2">
         <div className="border-black-300 border-2 hover:border-3 rounded-full p-3">
           <span className="text-sm text-gray-600">example123@gmail.com</span>
