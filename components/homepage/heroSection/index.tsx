@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import NavbarSection from "@/components/layout/navbar"
