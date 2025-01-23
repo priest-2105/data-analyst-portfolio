@@ -8,6 +8,7 @@ import { projects } from "@/config/data/projects"
 import { Button } from "@/components/ui/button"
 import { ImageModal } from "@/components/imageModal/index"
 import { ArrowLeft } from "lucide-react"
+import ThemeSwitcher from "@/components/themeSwticher"
 
 export default function ProjectDetails() {
   const params = useParams()
@@ -20,16 +21,16 @@ export default function ProjectDetails() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-4">
+    <div className="max-w-4xl mx-auto py-12 px-4 dark:bg-[#1f1f1f]">
       <Link href="/" className="mb-6 inline-block">
         <Button
           variant="outline"
-          className="rounded-full bg-gray-900 text-white hover:bg-white hover:text-gray-900 transition-colors"
+          className="rounded-full bg-gray-900 text-white hover:bg-white hover:text-gray-900 dark:bg-gray-50 dark:text-black dark:hover:bg-black dark:hover:text-gray-50 transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
         </Button>
       </Link>
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-[#f1f1f1] dark:bg-[#1f1f1f] rounded-lg shadow-lg overflow-hidden">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-4">
           {project.images.map((image, index) => (
             <div
@@ -47,11 +48,11 @@ export default function ProjectDetails() {
           ))}
         </div>
         <div className="p-6">
-          <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-          <p className="text-gray-600 mb-6">{project.description}</p>
+          <h1 className="text-3xl font-bold mb-4 dark:text-white">{project.title}</h1>
+          <p className="text-gray-600 dark:text-slate-50 mb-6">{project.description}</p>
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, index) => (
-              <span key={index} className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              <span key={index} className="bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 dark:text-slate-50">
                 {tech}
               </span>
             ))}
@@ -65,6 +66,7 @@ export default function ProjectDetails() {
           onClose={() => setSelectedImage(null)}
         />
       )}
+      <ThemeSwitcher />
     </div>
   )
 }

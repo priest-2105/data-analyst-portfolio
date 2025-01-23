@@ -13,7 +13,7 @@ export default function SkillsSection() {
   ];
 
   return (
-        <div className="w-full py-32 overflow-hidden relative bg-white rounded-b-[100px]">
+        <div className="w-full py-32 overflow-hidden relative bg-white dark:bg-black rounded-b-[100px]">
       <div className="flex space-x-12 animate-marquee">
         {[...skills, ...skills].map((client, index) => (
           <div

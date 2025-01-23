@@ -22,7 +22,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div className="w-full rounded-b-[100px] bg-[#f1f1f1]">
+    <div className="w-full rounded-b-[100px] bg-[#f1f1f1] dark:bg-[#1f1f1f]">
       <NavbarSection/>
       <main className="flex flex-col pb-16 items-center justify-center px-4 text-center mt-20 md:mt-32">
 
@@ -46,21 +46,21 @@ export default function HeroSection() {
         <div className="relative z-10">
           <div className="relative inline-block">
             <Image src="/img/avatar.png" alt="Profile" width={150} height={150} className="rounded-full" />
-            <div className="absolute -right-12 -rotate-3 bottom-3 bg-white rounded-full px-3 py-1 shadow-md  animate-updown">
+            <div className="absolute -right-12 -rotate-3 bottom-3 bg-white dark:bg-black dark:text-white rounded-full px-3 py-1 shadow-md  animate-updown">
             <span className="text-sm">Kawsar Ahmed</span>
             <span className="ml-1 text-xs">✨</span>
           </div>
 
           </div>
 
-          <h1 className="mt-4 max-w-2xl mx-auto text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-transparent bg-clip-text bg-custom-gradient">
+          <h1 className="mt-4 max-w-2xl mx-auto text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-transparent bg-clip-text bg-custom-gradient  dark:text-white">
           Building digital <span className="block">products, brands, and</span>
           <span className="block">experience.</span>
         </h1>
 
 
 
-          <Button variant="default" className="mt-12 bg-gray-900 text-white hover:bg-gray-800 rounded-full px-8 py-8">
+          <Button variant="default" className="mt-12 bg-gray-900 text-white hover:bg-gray-800  dark:bg-slate-100 dark:text-black dark:hover:bg-slate-300 rounded-full px-8 py-8">
             Latest Shots
             <LucideArrowUpRight/> 
             {/* <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{ height: "100%", width: "100%"}} viewBox="0 0 15 14" preserveAspectRatio="none" width="100%" height="100%"><use href="#svg-741451987_462"></use></svg> */}
