@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import NavbarSection from "@/components/layout/navbar"
-import { ArrowUpFromLine, LucideArrowUpRight } from "lucide-react"
+import { LucideArrowUpRight } from "lucide-react"
 
 export default function HeroSection() {
   const [position, setPosition] = useState({ x: 2.1, y: 29 })
@@ -22,9 +22,9 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <div>
+    <div className="w-full rounded-b-[100px] bg-[#f1f1f1]">
       <NavbarSection/>
-      <main className="flex flex-col items-center justify-center px-4 text-center mt-20 md:mt-32">
+      <main className="flex flex-col pb-16 items-center justify-center px-4 text-center mt-20 md:mt-32">
 
     <div className="relative w-full max-w-6xl mx-auto">
         {/* Animated Background */}
@@ -46,7 +46,7 @@ export default function HeroSection() {
         <div className="relative z-10">
           <div className="relative inline-block">
             <Image src="/img/avatar.png" alt="Profile" width={150} height={150} className="rounded-full" />
-            <div className="absolute -right-10 bg-white rounded-full px-3 py-1 shadow-md -rotate-12 animate-updown">
+            <div className="absolute -right-12 -rotate-3 bottom-3 bg-white rounded-full px-3 py-1 shadow-md  animate-updown">
             <span className="text-sm">Kawsar Ahmed</span>
             <span className="ml-1 text-xs">✨</span>
           </div>
@@ -68,23 +68,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Client Logos */}
-      <div className="w-full mt-32 overflow-hidden relative">
-        <div className="flex animate-scroll space-x-12 py-8">
-          {[
-            { name: "Adobe", width: 80 },
-            { name: "National Bank", width: 120 },
-            { name: "Coca Cola", width: 100 },
-            { name: "Mattered", width: 100 },
-            { name: "Subway", width: 100 },
-            { name: "Codecademy", width: 120 },
-          ].map((client, index) => (
-            <div key={index} className="flex-shrink-0 h-8 w-32 bg-gray-200 rounded flex items-center justify-center">
-              {client.name}
-            </div>
-          ))}
-        </div>
-      </div>
     </main>
     </div>
   )
