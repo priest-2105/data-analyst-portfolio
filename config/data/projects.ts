@@ -2,7 +2,7 @@ export interface Project {
     id: number
     title: string
     description: string
-    imageUrl: string
+    images: string[]
     technologies: string[]
   }
   
@@ -12,7 +12,11 @@ export interface Project {
       title: "E-commerce Platform",
       description:
         "A modern online shopping experience built with React and Node.js. This platform offers a seamless user interface, robust backend, and integration with various payment gateways.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+      ],
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     },
     {
@@ -20,7 +24,11 @@ export interface Project {
       title: "Social Media Dashboard",
       description:
         "A centralized platform for managing multiple social media accounts. This dashboard provides real-time analytics, scheduled posting, and engagement tracking across various social networks.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+      ],
       technologies: ["Vue.js", "Express", "PostgreSQL", "Chart.js"],
     },
     {
@@ -28,7 +36,11 @@ export interface Project {
       title: "Fitness Tracking App",
       description:
         "A mobile application for tracking workouts and nutrition goals. Users can log exercises, monitor calorie intake, and view progress over time with intuitive charts and graphs.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+      ],
       technologies: ["React Native", "Firebase", "Redux", "D3.js"],
     },
     {
@@ -36,7 +48,11 @@ export interface Project {
       title: "AI-powered Chatbot",
       description:
         "An intelligent chatbot for customer support automation. This bot uses natural language processing to understand and respond to customer queries, improving response times and reducing support workload.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+      ],
       technologies: ["Python", "TensorFlow", "Flask", "Docker"],
     },
     {
@@ -44,7 +60,11 @@ export interface Project {
       title: "Virtual Reality Game",
       description:
         "An immersive VR experience built with Unity and C#. This game transports players to a fantastical world where they can interact with the environment and solve puzzles using VR controllers.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+      ],
       technologies: ["Unity", "C#", "Oculus SDK", "Blender"],
     },
     {
@@ -52,7 +72,11 @@ export interface Project {
       title: "Blockchain Wallet",
       description:
         "A secure cryptocurrency wallet with multi-chain support. This wallet allows users to store, send, and receive various cryptocurrencies while maintaining full control of their private keys.",
-      imageUrl: "/placeholder.svg?height=300&width=400",
+      images: [
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png",
+      ],
       technologies: ["React", "Web3.js", "Solidity", "Ethereum"],
     },
   ]

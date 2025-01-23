@@ -16,16 +16,10 @@ export default function ProjectList() {
   }
 
   return (
-    <section className="py-24 px-4 bg-gray-50">
+    <section className="py-24 px-4 bg-gray-50 rounded-t-[100px]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-8">Featured Projects</h2>
-          <Button
-            variant="outline"
-            className="rounded-full px-6 py-2 bg-white shadow-sm hover:shadow-md transition-shadow"
-          >
-            View All Projects
-          </Button>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -34,7 +28,7 @@ export default function ProjectList() {
               <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="relative h-48">
                   <Image
-                    src={project.imageUrl || "/placeholder.svg"}
+                    src={project.images[0] || "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rR6HYXBrMmX4cRpXfXUOvpvpB0-gFO11vA7BrdDZj12yuGFowhxcLYUw6.png"}
                     alt={project.title}
                     layout="fill"
                     objectFit="cover"
