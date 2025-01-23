@@ -7,19 +7,19 @@ import NavbarSection from "@/components/layout/navbar"
 import { LucideArrowUpRight } from "lucide-react"
 
 export default function HeroSection() {
-  const [position, setPosition] = useState({ x: 2.1, y: 29 })
+  // const [position, setPosition] = useState({ x: 2.1, y: 29 })
 
-  useEffect(() => {
-    const updatePosition = () => {
-      setPosition({
-        x: Math.sin(Date.now() / 10) * 0.1,
-        y: Math.cos(Date.now() / 10) * 0.1 + 29,
-      })
-    }
+  // useEffect(() => {
+  //   const updatePosition = () => {
+  //     setPosition({
+  //       x: Math.sin(Date.now() / 10) * 0.1,
+  //       y: Math.cos(Date.now() / 10) * 0.1 + 29,
+  //     })
+  //   }
 
-    const interval = setInterval(updatePosition, 50)
-    return () => clearInterval(interval)
-  }, [])
+  //   const interval = setInterval(updatePosition, 50)
+  //   return () => clearInterval(interval)
+  // }, [])
 
   return (
     <div className="w-full rounded-b-[100px] bg-[#f1f1f1] dark:bg-[#1f1f1f]">

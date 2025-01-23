@@ -1,14 +1,12 @@
 "use client"
 
-import { useState } from "react"
-import Image from "next/image"
+import { useState } from "react" 
 import Link from "next/link"
 import { Copy, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export default function NavbarSection() {
-  const [isOpen, setIsOpen] = useState(false)
 
   const handleCopy = () => {
     navigator.clipboard.writeText("example123@gmail.com")
